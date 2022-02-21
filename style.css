@@ -3,13 +3,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
 }
-
-.bg-box{
-    display: flex;
-    flex-direction: column;
+.background-shape{
+    position: fixed;
+    top:0;
     width: 100%;
     z-index: -1;
+}
+.bg-box{
+    width: 100%; 
 }
 .bg{
     width: 50%;
@@ -21,10 +25,118 @@
 }
 .bg-two{
     border-top-left-radius: 250px;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     background-color: hsl(270, 20%, 96%);
 }
 
 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+}
+
+.phone{
+    width: 300px;
+
+}
+
+.notch{
+    width: 50%;
+    margin: auto;
+    height: 30px;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    top: 32px;
+}
+
+.app{
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+
+.avatar-container{   
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 15px;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+
+    height: auto;
+    width: auto;
+    padding-top: 15px;
+}
+
+
+
+.avatar-info{
+    display: grid;
+    grid-gap: 0 5px;
+    margin-top: 15px;
+    grid-template-columns: 30px 30px 1fr 30px;
+    grid-auto-rows: 25px;
+
+    
+}
+
+.icon-angle-left{
+    margin: 0 5px 12px;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    justify-self: end;
+    align-self: center;
+   }
+
+.avatar-image{
+    border-radius: 15px;
+    border: white solid 1px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: start;
+    margin-top: 5px;
+}
+
+.avatar-name{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;  
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: start;
+    align-self: center;
+
+
+}
+.avatar-status{
+    font-size: 8px;
+    color: hsl(276, 100%, 81%);
+    justify-self: start;
+    align-self: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    
+}
+
+.ellipsis{
+    margin: 0 5px 12px;
+
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    justify-self: start;
+    align-self: center;
+}
+
+.chat-container{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
