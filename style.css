@@ -1,0 +1,30 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: -1;
+}
+.bg{
+    width: 50%;
+    height: 500px;  
+}
+.bg-one{
+    border-bottom-right-radius: 250px;
+    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%),  hsl(264, 100%, 61%));
+}
+.bg-two{
+    border-top-left-radius: 250px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(270, 20%, 96%);
+}
+
+
